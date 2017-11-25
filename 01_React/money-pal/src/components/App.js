@@ -17,6 +17,7 @@ export default class App extends Component {
         this.handleAccountAdd = this.handleAccountAdd.bind(this);
     }
 
+
     componentDidMount() {
         const savedNotes = JSON.parse(localStorage.getItem('notes'));
 
