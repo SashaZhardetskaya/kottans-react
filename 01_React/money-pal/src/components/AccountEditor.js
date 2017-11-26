@@ -57,8 +57,6 @@ export default class AccountEditor extends Component {
             date: '',
             category: ''
         });
-        // const resetedCategory = this.state.category;
-        // this.props.onResetCategory(resetedCategory);
     }
 
     render() {

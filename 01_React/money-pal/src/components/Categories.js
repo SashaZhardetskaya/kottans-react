@@ -32,18 +32,18 @@ export default class Categories extends Component {
       <div>
         <div>
           <label>
-            <input type="radio" value="option1"
-                   checked={this.props.selectedCategory === 'option1'}
+            <input type="radio" value="transport"
+                   checked={this.props.selectedCategory === 'transport'}
                    onChange={this.handleOptionChange} />
-            Option 1
+            Transport
           </label>
         </div>
         <div>
           <label>
-            <input type="radio" value="option2"
-                   checked={this.props.selectedCategory === 'option2'}
+            <input type="radio" value="food"
+                   checked={this.props.selectedCategory === 'food'}
                    onChange={this.handleOptionChange} />
-            Option 2
+            Food
           </label>
         </div>
         <div>
