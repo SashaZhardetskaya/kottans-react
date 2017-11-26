@@ -5,7 +5,7 @@ export default class Categories extends Component {
     super();
 
     this.state = {
-      selectedCategory: ''
+      selectedCategory: 'option1'
     };
 
     this.handleOptionChange = this.handleOptionChange.bind(this);
@@ -13,10 +13,10 @@ export default class Categories extends Component {
 
   handleOptionChange (e) {
     this.setState({
-      selectedCategory: e.target.value
+      selectedCategory: e.target.value === this.state.selectedCategory ? '' : e.target.value
     });
     let selected = {
-      option: e.target.value
+      option: this.state.selectedCategory
     };
 
     this.props.onAddCategories(selected.option);

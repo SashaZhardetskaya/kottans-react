@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './NoteEditor.css';
+import './AccountEditor.css';
 import Categories from './Categories';
 
 export default class AccountEditor extends Component {
@@ -46,7 +46,7 @@ export default class AccountEditor extends Component {
             category: this.state.category,
         };
 
-      console.log(this.state.category)
+      console.log(this.state.category);
 
         this.props.onAccountAdd(newAccount);
         this.resetState();
@@ -58,6 +58,8 @@ export default class AccountEditor extends Component {
             date: '',
             category: ''
         });
+        // const resetedCategory = this.state.category;
+        // this.props.onResetCategory(resetedCategory);
     }
 
     render() {

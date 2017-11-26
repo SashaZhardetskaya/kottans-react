@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import Note from './Note';
+import Account from './Account';
 
-import './NotesGrid.css';
+import './AccountGrid.css';
 
 
-export default class NotesGrid extends Component {
+export default class AccountsList extends Component {
     render() {
         const {
             accounts,
@@ -18,7 +18,7 @@ export default class NotesGrid extends Component {
             >
                 {
                     accounts.map(account =>
-                        <Note
+                        <Account
                             key={account.date}
                             id={account.date}
                             onDelete={onAccountDelete}
@@ -26,7 +26,7 @@ export default class NotesGrid extends Component {
                             category={account.category}
                             date={account.date}
                         >
-                        </Note>
+                        </Account>
                     )
                 }
             </div>

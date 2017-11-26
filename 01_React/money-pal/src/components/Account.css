@@ -1,4 +1,4 @@
-.note {
+.account {
     width: 230px;
     height: auto;
     float: left;
@@ -12,11 +12,11 @@
     word-wrap: break-word;
 }
 
-.note:hover {
+.account:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.note__delete-icon {
+.account__delete-icon {
     position: absolute;
     top:5px;
     right:5px;
@@ -30,6 +30,6 @@
     opacity: 0;
 }
 
-.note:hover .note__delete-icon {
+.account:hover .account__delete-icon {
     opacity: 1;
 }

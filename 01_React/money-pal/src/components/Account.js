@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Note.css';
+import './Account.css';
 
 export default class Note extends Component {
   constructor() {
@@ -25,8 +25,8 @@ export default class Note extends Component {
     } = this.props;
 
     return (
-      <div className="note">
-          <button className="note__delete-icon" onClick={this.handleDelete}> × </button>
+      <div className="account">
+          <button className="account__delete-icon" onClick={this.handleDelete}> × </button>
           <p>{amount}</p>
           <p>category: {category}</p>
           <p>{date}</p>

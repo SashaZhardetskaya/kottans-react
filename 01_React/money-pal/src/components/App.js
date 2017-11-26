@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import AccountEditor from './AccountEditor';
-import NotesGrid from './NotesGrid';
+import AccountsList from './AccountsList';
 
 import './App.css';
 
@@ -54,7 +54,7 @@ export default class App extends Component {
 
                 <AccountEditor onAccountAdd={this.handleAccountAdd} />
 
-                <NotesGrid
+                <AccountsList
                     accounts={this.state.accounts}
                     onNoteDelete={this.handleNoteDelete}
                 />
