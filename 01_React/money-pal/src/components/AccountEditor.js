@@ -36,7 +36,6 @@ export default class AccountEditor extends Component {
         this.setState({
             category: newCategory
         });
-        console.log(this.state.category)
     }
 
     handleAccountAdd() {
@@ -46,10 +45,10 @@ export default class AccountEditor extends Component {
             category: this.state.category,
         };
 
-      console.log(this.state.category);
-
-        this.props.onAccountAdd(newAccount);
-        this.resetState();
+        if (newAccount.amount !== 0 && newAccount.category !== '') {
+          this.props.onAccountAdd(newAccount);
+          this.resetState();
+        }
     }
 
     resetState() {
@@ -69,9 +68,9 @@ export default class AccountEditor extends Component {
                 <div>{this.state.amount}</div>
                 <button onClick={this.decreaseAmount}>-</button>
 
-                <Categories onAddCategories = {this.handleCategoryChange}/>
+                <Categories onAddCategories = {this.handleCategoryChange} selectedCategory={this.state.category} />
 
-                <button className="editor__button" onClick={this.handleAccountAdd}>Add</button>
+                <button className={this.state.amount !== 0 && this.state.category !== '' ? "editor__button" : "editor__button error"} onClick={this.handleAccountAdd}>Add</button>
             </div>
         );
     }

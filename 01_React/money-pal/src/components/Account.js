@@ -23,13 +23,14 @@ export default class Note extends Component {
       category,
       date,
     } = this.props;
+    const formatedDate = new Date(date).getYear();
 
     return (
       <div className="account">
           <button className="account__delete-icon" onClick={this.handleDelete}> × </button>
           <p>{amount}</p>
           <p>category: {category}</p>
-          <p>{date}</p>
+          <p>{formatedDate}</p>
       </div>
     );
   }
