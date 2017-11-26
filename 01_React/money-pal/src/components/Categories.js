@@ -19,40 +19,40 @@ export default class Categories extends Component {
       option: e.target.value
     };
 
-    this.props.onAddCategories(selected);
-    console.log('You have selected:', e.target.value);
+    this.props.onAddCategories(selected.option);
+    // console.log('You have selected:', selected.option);
+    console.log('You have selected:', this.state.selectedCategory);
   }
 
 
   render() {
     return (
-      <form>
-        <div className="radio">
+      <div>
+        <div>
           <label>
-            <input type="radio" value="option1"
+            <input type="checkbox" value="option1"
                    checked={this.state.selectedCategory === 'option1'}
                    onChange={this.handleOptionChange} />
             Option 1
           </label>
         </div>
-        <div className="radio">
+        <div>
           <label>
-            <input type="radio" value="option2"
+            <input type="checkbox" value="option2"
                    checked={this.state.selectedCategory === 'option2'}
                    onChange={this.handleOptionChange} />
             Option 2
           </label>
         </div>
-        <div className="radio">
+        <div>
           <label>
-            <input type="radio" value="option3"
+            <input type="checkbox" value="option3"
                    checked={this.state.selectedCategory === 'option3'}
                    onChange={this.handleOptionChange} />
             Option 3
           </label>
         </div>
-        <button className="btn btn-default" type="submit">Save</button>
-      </form>
+      </div>
     );
   }
 }

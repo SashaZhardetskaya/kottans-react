@@ -17,7 +17,7 @@ export default class AccountEditor extends Component {
         this.decreaseAmount = this.decreaseAmount.bind(this);
         this.handleAccountAdd = this.handleAccountAdd.bind(this);
         this.resetState = this.resetState.bind(this);
-        this.handleOptionChange = this.handleOptionChange.bind(this);
+        this.handleCategoryChange = this.handleCategoryChange.bind(this);
     }
 
 
@@ -32,18 +32,21 @@ export default class AccountEditor extends Component {
         });
     }
 
-    handleOptionChange(newCategory) {
+    handleCategoryChange(newCategory) {
         this.setState({
-            category: newCategory.option
+            category: newCategory
         });
+        console.log(this.state.category)
     }
 
     handleAccountAdd() {
         const newAccount = {
             amount: this.state.amount,
             date: Date.now(),
-            // category: ''
+            category: this.state.category,
         };
+
+      console.log(this.state.category)
 
         this.props.onAccountAdd(newAccount);
         this.resetState();
@@ -64,7 +67,7 @@ export default class AccountEditor extends Component {
                 <div>{this.state.amount}</div>
                 <button onClick={this.decreaseAmount}>-</button>
 
-                <Categories onAddCategories = {this.handleOptionChange}/>
+                <Categories onAddCategories = {this.handleCategoryChange}/>
 
                 <button className="editor__button" onClick={this.handleAccountAdd}>Add</button>
             </div>

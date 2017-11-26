@@ -4,33 +4,27 @@ import Note from './Note';
 
 import './NotesGrid.css';
 
-const masonryOptions = {
-    columnWidth: 250,
-    gutter: 10,
-    isFitWidth: true
-};
 
 export default class NotesGrid extends Component {
     render() {
         const {
-            notes,
-            onNoteDelete
+            accounts,
+            onAccountDelete
         } = this.props;
 
         return (
             <div
                 className='grid'
-                options={masonryOptions}
             >
                 {
-                    notes.map(note =>
+                    accounts.map(account =>
                         <Note
-                            key={note.id}
-                            id={note.id}
-                            color={note.color}
-                            onDelete={onNoteDelete}
-                            text={note.text}
-                            category={note.category}
+                            key={account.date}
+                            id={account.date}
+                            onDelete={onAccountDelete}
+                            amount={account.amount}
+                            category={account.category}
+                            date={account.date}
                         >
                         </Note>
                     )

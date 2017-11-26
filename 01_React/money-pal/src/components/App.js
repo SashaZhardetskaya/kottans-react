@@ -10,7 +10,7 @@ export default class App extends Component {
         super(props);
 
         this.state = {
-            notes: []
+            accounts: []
         };
 
         this.handleNoteDelete = this.handleNoteDelete.bind(this);
@@ -19,29 +19,32 @@ export default class App extends Component {
 
 
     componentDidMount() {
-        const savedNotes = JSON.parse(localStorage.getItem('notes'));
+        const savedAccounts = JSON.parse(localStorage.getItem('accounts'));
 
-        if (savedNotes) {
-            this.setState({ notes: savedNotes });
+        if (savedAccounts) {
+            this.setState({ accounts: savedAccounts });
         }
+
     }
 
     componentDidUpdate() {
-        const notes = JSON.stringify(this.state.notes);
+        const accounts = JSON.stringify(this.state.accounts);
 
-        localStorage.setItem('notes', notes);
+        localStorage.setItem('accounts', accounts);
     }
 
-    handleNoteDelete(noteId) {
+    handleNoteDelete(accountId) {
         this.setState({
-            notes: this.state.notes.filter(note => note.id !== noteId)
+          accounts: this.state.accounts.filter(account => account.id !== accountId)
         });
     }
 
     handleAccountAdd(newAccount) {
         this.setState({
-            notes: [newAccount, ...this.state.notes]
+          accounts: [newAccount, ...this.state.accounts]
         });
+      console.log('newAccount', newAccount);
+      console.log('newAccount', this.state.accounts)
     }
 
     render() {
@@ -52,7 +55,7 @@ export default class App extends Component {
                 <AccountEditor onAccountAdd={this.handleAccountAdd} />
 
                 <NotesGrid
-                    notes={this.state.notes}
+                    accounts={this.state.accounts}
                     onNoteDelete={this.handleNoteDelete}
                 />
             </div>
