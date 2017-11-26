@@ -13,7 +13,7 @@ export default class App extends Component {
             accounts: []
         };
 
-        this.handleNoteDelete = this.handleNoteDelete.bind(this);
+        this.handleAccountDelete = this.handleAccountDelete.bind(this);
         this.handleAccountAdd = this.handleAccountAdd.bind(this);
     }
 
@@ -31,12 +31,14 @@ export default class App extends Component {
         const accounts = JSON.stringify(this.state.accounts);
 
         localStorage.setItem('accounts', accounts);
+
     }
 
-    handleNoteDelete(accountId) {
+    handleAccountDelete(accountId) {
         this.setState({
-          accounts: this.state.accounts.filter(account => account.id !== accountId)
+          accounts: this.state.accounts.filter(accounts => accounts.id !== accountId)
         });
+        console.log(this.state.accounts)
     }
 
     handleAccountAdd(newAccount) {
@@ -56,7 +58,7 @@ export default class App extends Component {
 
                 <AccountsList
                     accounts={this.state.accounts}
-                    onNoteDelete={this.handleNoteDelete}
+                    onAccountDelete={this.handleAccountDelete}
                 />
             </div>
         );

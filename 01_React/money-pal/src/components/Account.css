@@ -10,6 +10,7 @@
     transition: box-shadow .3s;
     white-space: pre-wrap;
     word-wrap: break-word;
+    position: relative;
 }
 
 .account:hover {

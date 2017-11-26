@@ -10,7 +10,8 @@ export default class AccountEditor extends Component {
         this.state = {
             amount: 0,
             date: '',
-            category: ''
+            category: '',
+            id: '',
         };
 
         this.increaseAmount = this.increaseAmount.bind(this);
@@ -43,6 +44,7 @@ export default class AccountEditor extends Component {
             amount: this.state.amount,
             date: Date.now(),
             category: this.state.category,
+            id: Date.now(),
         };
 
         if (newAccount.amount !== 0 && newAccount.category !== '') {

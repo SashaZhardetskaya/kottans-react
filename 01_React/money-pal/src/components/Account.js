@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './Account.css';
 
-export default class Note extends Component {
+export default class Account extends Component {
   constructor() {
     super();
 
@@ -22,6 +22,7 @@ export default class Note extends Component {
       amount,
       category,
       date,
+      id,
     } = this.props;
     const formatedDate = {
       year: new Date(date).getFullYear(),
