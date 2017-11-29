@@ -22,7 +22,6 @@ export default class Account extends Component {
       amount,
       category,
       date,
-      id,
     } = this.props;
     const formatedDate = {
       year: new Date(date).getFullYear(),
