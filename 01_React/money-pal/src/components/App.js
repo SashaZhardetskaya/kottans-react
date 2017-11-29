@@ -40,6 +40,11 @@ export default class App extends Component {
         this.setState({
           accounts: this.state.accounts.filter(accounts => accounts.id !== accountId),
         });
+        if (this.state.accountsToShow) {
+          this.setState({
+            accountsToShow: this.state.accountsToShow.filter(accounts => accounts.id !== accountId),
+          });
+        }
         console.log(this.state.accounts)
     }
 
@@ -47,6 +52,11 @@ export default class App extends Component {
         this.setState({
           accounts: [newAccount, ...this.state.accounts],
         });
+        if (this.state.accountsToShow) {
+          this.setState({
+            accountsToShow: [newAccount, ...this.state.accountsToShow],
+          });
+        }
       console.log('newAccount', this.state.accounts)
     }
 
