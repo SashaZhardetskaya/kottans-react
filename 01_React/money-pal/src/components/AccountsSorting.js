@@ -21,12 +21,14 @@ export default class AccountsSorting extends Component {
 
   handleSortingChange = (e) => {
     let selectedSorting = {
-      sorting: e.target.value
+      sortingName: e.target.name,
+      sortingStatus: e.target.value
     };
 
-    this.props.onSortingChange(selectedSorting.sorting);
+    this.props.onSortingChange(selectedSorting.sortingName, selectedSorting.sortingStatus);
+    // this.props.onSortingChange(selectedSorting);
 
-    console.log(selectedSorting.sorting)
+    console.log(selectedSorting.sortingName, selectedSorting.sortingStatus)
   }
 
   render() {
@@ -69,8 +71,8 @@ export default class AccountsSorting extends Component {
         <li>
           <label>
             <input type="radio"
-                   name="sortAccounts"
-                   value="ascendingDate"
+                   name="date"
+                   value="ascending"
                    onChange={this.handleSortingChange}
             />
             ascending date
@@ -79,8 +81,8 @@ export default class AccountsSorting extends Component {
         <li>
           <label>
             <input type="radio"
-                   name="sortAccounts"
-                   value="descendingDate"
+                   name="date"
+                   value="descending"
                    onChange={this.handleSortingChange}
             />
             descending date
@@ -97,8 +99,8 @@ export default class AccountsSorting extends Component {
         <li>
           <label>
             <input type="radio"
-                   name="sortAccounts"
-                   value="ascendingAmount"
+                   name="amount"
+                   value="ascending"
                    onChange={this.handleSortingChange}
             />
             ascending amount
@@ -107,8 +109,8 @@ export default class AccountsSorting extends Component {
         <li>
           <label>
             <input type="radio"
-                   name="sortAccounts"
-                   value="descendingAmount"
+                   name="amount"
+                   value="descending"
                    onChange={this.handleSortingChange}
             />
             descending amount
