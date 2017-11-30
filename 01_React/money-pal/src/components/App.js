@@ -4,6 +4,7 @@ import AccountEditor from './AccountEditor';
 import AccountsList from './AccountsList';
 import AccountFilter from './AccountFilter';
 import AccountsSorting from './AccountsSorting';
+import Piechart from './Piechart';
 
 
 import './App.css';
@@ -100,22 +101,24 @@ export default class App extends Component {
 
 
     render() {
-        return (
-            <div className="app">
-                <h2 className="app__header">App</h2>
+      return (
+        <div className="app">
+          <h2 className="app__header">App</h2>
 
-                <AccountEditor onAccountAdd={this.handleAccountAdd} />
+          <AccountEditor onAccountAdd={this.handleAccountAdd} />
 
-                <AccountFilter onFilterChange={this.filterAccountsHandler}/>
+          <AccountFilter onFilterChange={this.filterAccountsHandler}/>
 
-                <AccountsSorting onSortingChange={this.sortAccountsHandler}/>
+          <AccountsSorting onSortingChange={this.sortAccountsHandler}/>
+
+          <Piechart data={[...this.state.accounts].filter(x => x.amount > 0)} />
 
 
-                <AccountsList
-                    accounts={this.state.accountsToShow ? this.state.accountsToShow : this.state.accounts}
-                    onAccountDelete={this.handleAccountDelete}
-                />
-            </div>
+          <AccountsList
+              accounts={this.state.accountsToShow ? this.state.accountsToShow : this.state.accounts}
+              onAccountDelete={this.handleAccountDelete}
+          />
+      </div>
         );
     }
 }

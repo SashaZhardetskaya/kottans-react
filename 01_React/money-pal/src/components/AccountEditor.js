@@ -40,11 +40,23 @@ export default class AccountEditor extends Component {
     }
 
     handleAccountAdd() {
+        const selectColor = (category) => {
+            if (category === 'transport') {
+                return '#56c387'
+            }
+            if (category === 'food') {
+                return '#c32150'
+            }
+            if (category === 'option3') {
+                return '#416ec3'
+            }
+        };
         const newAccount = {
             amount: this.state.amount,
             date: Date.now(),
             category: this.state.category,
             id: Date.now(),
+            color: selectColor(this.state.category),
         };
 
         if (newAccount.amount !== 0 && newAccount.category !== '') {
