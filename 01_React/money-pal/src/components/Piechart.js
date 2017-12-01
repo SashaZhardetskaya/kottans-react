@@ -17,39 +17,31 @@ export default class Piechart extends Component {
   }
 
   render() {
-    // const data = [
-    //   {label: "Facebook", value: 100, color: "#3b5998"},
-    //   {label: "Twitter", value: 60, color: "#00aced"},
-    //   {label: "Google Plus", value: 30, color: "#dd4b39"},
-    //   {label: "Pinterest", value: 20, color: "#cb2027"},
-    //   {label: "Linked In", value: 10, color: "#007bb6"},
-    // ];
 
-    // const accounts = this.props;
     const accounts = this.props.data;
 
-    const lastData = accounts.reduce((acc, item) => {
+    const reducedAccountsArr = accounts.reduce((acc, item) => {
       let accByCategory = acc.find(x => x.category === item.category);
       if(accByCategory) {
         accByCategory.amount += item.amount;
       } else {
-        acc.push(item);
+        acc.push({
+          amount: item.amount,
+          category: item.category
+        });
       }
       return acc;
     }, []);
 
-    const data = lastData.map((obj) => {
-      obj.value = obj.amount;
+    const data = reducedAccountsArr.map((obj) => {
+      obj.value = obj.amount; //the name of thw column must be 'value' for plugin
       return obj;
     });
 
 
 
 
-
-
-
-    console.log(data);
+    // console.log(data);
 
     const {expandedSector} = this.state;
 
@@ -79,3 +71,4 @@ export default class Piechart extends Component {
     )
   }
 }
+

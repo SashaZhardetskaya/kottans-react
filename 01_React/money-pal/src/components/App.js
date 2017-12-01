@@ -5,6 +5,7 @@ import AccountsList from './AccountsList';
 import AccountFilter from './AccountFilter';
 import AccountsSorting from './AccountsSorting';
 import Piechart from './Piechart';
+// import PieChart from './PieChart';
 
 
 import './App.css';
@@ -34,7 +35,6 @@ export default class App extends Component {
     componentDidUpdate() {
         const accounts = JSON.stringify(this.state.accounts);
         localStorage.setItem('accounts', accounts);
-
     }
 
     handleAccountDelete(accountId) {
@@ -101,6 +101,9 @@ export default class App extends Component {
 
 
     render() {
+      // const = {
+      //
+      // }
       return (
         <div className="app">
           <h2 className="app__header">App</h2>
@@ -111,7 +114,10 @@ export default class App extends Component {
 
           <AccountsSorting onSortingChange={this.sortAccountsHandler}/>
 
-          <Piechart data={[...this.state.accounts].filter(x => x.amount > 0)} />
+
+          <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
+
+          {/*<PieChart accounts={this.state.accounts.filter(x => x.amount > 0)} />*/}
 
 
           <AccountsList
