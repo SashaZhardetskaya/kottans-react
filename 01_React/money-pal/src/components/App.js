@@ -5,6 +5,8 @@ import AccountsList from './AccountsList';
 import AccountFilter from './AccountFilter';
 import AccountsSorting from './AccountsSorting';
 import Piechart from './Piechart';
+import PiechartSumm from './PiechartSumm';
+
 // import PieChart from './PieChart';
 
 
@@ -116,6 +118,8 @@ export default class App extends Component {
 
 
           <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
+
+          <PiechartSumm data={this.state.accounts.filter(x => x.amount > 0)} />
 
           {/*<PieChart accounts={this.state.accounts.filter(x => x.amount > 0)} />*/}
 

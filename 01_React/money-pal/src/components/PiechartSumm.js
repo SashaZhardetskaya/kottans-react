@@ -3,7 +3,7 @@ import PieChart from "react-svg-piechart"
 
 import './PieCharts.css';
 
-export default class Piechart extends Component {
+export default class PiechartSumm extends Component {
   constructor() {
     super();
 
