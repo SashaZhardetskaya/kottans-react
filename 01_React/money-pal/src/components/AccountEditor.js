@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './AccountEditor.css';
-import Categories from './Categories';
+import Categories from './Categories/Categories';
 
 export default class AccountEditor extends Component {
     constructor() {
