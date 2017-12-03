@@ -29,7 +29,7 @@ export default class Categories extends Component {
 
   render() {
     return (
-      <div>
+      <div className="categories__container">
         <div>
           <label>
             <input type="radio" value="transport"
@@ -48,14 +48,37 @@ export default class Categories extends Component {
         </div>
         <div>
           <label>
-            <input type="radio" value="option3"
-                   checked={this.props.selectedCategory === 'option3'}
+            <input type="radio" value="clothes"
+                   checked={this.props.selectedCategory === 'clothes'}
                    onChange={this.handleOptionChange} />
-            Option 3
+            Clothes
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" value="entertainment"
+                   checked={this.props.selectedCategory === 'entertainment'}
+                   onChange={this.handleOptionChange} />
+            Entertainment
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" value="bills"
+                   checked={this.props.selectedCategory === 'bills'}
+                   onChange={this.handleOptionChange} />
+            Bills
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="radio" value="other"
+                   checked={this.props.selectedCategory === 'other'}
+                   onChange={this.handleOptionChange} />
+            Other
           </label>
         </div>
       </div>
     );
   }
 }
-

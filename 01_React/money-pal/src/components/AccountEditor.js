@@ -16,6 +16,7 @@ export default class AccountEditor extends Component {
 
         this.increaseAmount = this.increaseAmount.bind(this);
         this.decreaseAmount = this.decreaseAmount.bind(this);
+        this.changeAmount = this.changeAmount.bind(this);
         this.handleAccountAdd = this.handleAccountAdd.bind(this);
         this.resetState = this.resetState.bind(this);
         this.handleCategoryChange = this.handleCategoryChange.bind(this);
@@ -30,6 +31,11 @@ export default class AccountEditor extends Component {
     decreaseAmount(event) {
         this.setState({
           amount: this.state.amount - 1
+        });
+    }
+    changeAmount(e) {
+        this.setState({
+          amount: +e.target.value
         });
     }
 
@@ -47,8 +53,17 @@ export default class AccountEditor extends Component {
             if (category === 'food') {
                 return '#c32150'
             }
-            if (category === 'option3') {
+            if (category === 'clothes') {
                 return '#416ec3'
+            }
+            if (category === 'entertainment') {
+                return '#df8748'
+            }
+            if (category === 'bills') {
+                return '#3dc3c2'
+            }
+            if (category === 'other') {
+                return '#901ac3'
             }
         };
         const newAccount = {
@@ -77,7 +92,8 @@ export default class AccountEditor extends Component {
         return (
             <div className="editor">
                 <button onClick={this.increaseAmount}>+</button>
-                <div>{this.state.amount}</div>
+                <input type="number" value={this.state.amount} onChange={this.changeAmount}/>
+                {/*<div>{this.state.amount}</div>*/}
                 <button onClick={this.decreaseAmount}>-</button>
 
                 <Categories onAddCategories = {this.handleCategoryChange} selectedCategory={this.state.category} />

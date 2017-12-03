@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40537371-813a-4e62-b86e-68fa8f65bcf9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/App.css" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/App.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/App.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/PiechartSumm.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/PiechartSumm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/Categories.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Categories.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="122" column="16" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
+            <state relative-caret-position="495">
+              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -46,6 +45,28 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountEditor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Categories.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Categories.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -107,18 +128,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountEditor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="76" column="16" lean-forward="false" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -144,19 +153,19 @@
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/NotesGrid.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/AccountsList.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.css" />
-        <option value="$PROJECT_DIR$/01_React/money-pal/src/components/Categories.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/Account.css" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/Account.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/AccountFilter.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/AccountsSorting.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/package.json" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/PieChart.js" />
-        <option value="$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/PieCharts.css" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/Piechart.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/App.css" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/PiechartSumm.js" />
         <option value="$PROJECT_DIR$/01_React/money-pal/src/components/App.js" />
+        <option value="$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js" />
+        <option value="$PROJECT_DIR$/01_React/money-pal/src/components/Categories.js" />
       </list>
     </option>
   </component>
@@ -412,7 +421,7 @@
       <workItem from="1511551885668" duration="20625000" />
       <workItem from="1511690999215" duration="15390000" />
       <workItem from="1511897978291" duration="59540000" />
-      <workItem from="1512297240611" duration="11716000" />
+      <workItem from="1512297240611" duration="14115000" />
     </task>
     <task id="LOCAL-00001" summary="add piechartSumm for expenses &amp; incomes (no data)">
       <created>1512173980683</created>
@@ -425,7 +434,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107271000" />
+    <option name="totallyTimeSpent" value="109670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="27" width="1309" height="742" extended-state="0" />
@@ -494,6 +503,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Categories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01_React/04_Notes/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -733,16 +736,6 @@
           <caret line="35" column="9" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="35" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="76" column="16" lean-forward="false" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -801,11 +794,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="122" column="16" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
+        <state relative-caret-position="495">
+          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/AccountEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
