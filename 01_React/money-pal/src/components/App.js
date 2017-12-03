@@ -119,7 +119,7 @@ export default class App extends Component {
 
           <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
 
-          <PiechartSumm data={this.state.accounts.filter(x => x.amount > 0)} />
+          <PiechartSumm data={this.state.accounts} />
 
           {/*<PieChart accounts={this.state.accounts.filter(x => x.amount > 0)} />*/}
 
