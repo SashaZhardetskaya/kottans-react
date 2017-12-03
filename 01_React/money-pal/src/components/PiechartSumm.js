@@ -66,8 +66,6 @@ export default class PiechartSumm extends Component {
             ))
           }
         </div>
-
-
       </div>
     )
   }

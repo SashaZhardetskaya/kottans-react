@@ -117,11 +117,14 @@ export default class App extends Component {
           <AccountsSorting onSortingChange={this.sortAccountsHandler}/>
 
 
-          <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
-
-          <PiechartSumm data={this.state.accounts} />
-
-          {/*<PieChart accounts={this.state.accounts.filter(x => x.amount > 0)} />*/}
+          {this.state.accounts.length > 0 && this.state.accounts.filter(x => x.amount > 0).length > 0 &&
+            <div className="charts__container" >
+              <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
+              {this.state.accounts.filter(x => x.amount < 0).length > 0 &&
+                <PiechartSumm data={this.state.accounts}/>
+              }
+            </div>
+          }
 
 
           <AccountsList
