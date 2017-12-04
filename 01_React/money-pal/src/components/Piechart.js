@@ -66,7 +66,7 @@ export default class Piechart extends Component {
               <div key={i} >
                 <span style={{background: element.color}}></span>
                 <span style={{fontWeight: this.state.expandedSector === i ? "bold" : null}}>
-                  {element.category} : {element.amount} {element.color}
+                  {element.category} : {element.amount}
                 </span>
               </div>
             ))
