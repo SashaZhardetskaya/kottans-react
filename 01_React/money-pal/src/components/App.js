@@ -110,11 +110,21 @@ export default class App extends Component {
         <div className="app">
           <h2 className="app__header">App</h2>
 
-          <AccountEditor onAccountAdd={this.handleAccountAdd} />
+          <div className="editor__container">
 
-          <AccountFilter onFilterChange={this.filterAccountsHandler}/>
+            <AccountEditor onAccountAdd={this.handleAccountAdd} />
 
-          <AccountsSorting onSortingChange={this.sortAccountsHandler}/>
+            <div className="filters__container">
+
+              <AccountFilter onFilterChange={this.filterAccountsHandler}/>
+
+              <AccountsSorting onSortingChange={this.sortAccountsHandler}/>
+
+            </div>
+
+          </div>
+
+
 
 
           {this.state.accounts.length > 0 && this.state.accounts.filter(x => x.amount > 0).length > 0 &&

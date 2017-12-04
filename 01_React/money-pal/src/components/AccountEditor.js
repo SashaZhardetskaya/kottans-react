@@ -91,10 +91,12 @@ export default class AccountEditor extends Component {
     render() {
         return (
             <div className="editor">
-                <button onClick={this.increaseAmount}>+</button>
-                <input type="number" value={this.state.amount} onChange={this.changeAmount}/>
-                {/*<div>{this.state.amount}</div>*/}
-                <button onClick={this.decreaseAmount}>-</button>
+                <div className="number-editor">
+                    <button onClick={this.decreaseAmount} className="number-editor__button"><span>-</span></button>
+                    <input type="number" value={this.state.amount} onChange={this.changeAmount}/>
+                  {/*<div>{this.state.amount}</div>*/}
+                    <button onClick={this.increaseAmount} className="number-editor__button"><span>+</span></button>
+                </div>
 
                 <Categories onAddCategories = {this.handleCategoryChange} selectedCategory={this.state.category} />
 

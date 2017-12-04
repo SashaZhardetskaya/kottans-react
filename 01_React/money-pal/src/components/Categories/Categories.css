@@ -16,8 +16,10 @@
 }
 
 .category p {
-    margin: 0 auto;
+    margin: 8px auto;
     font-size: 12px;
+    font-weight: 400;
+    color: #333;
 }
 
 .category__input {
@@ -34,8 +36,8 @@
     top: 0;
     left: 0;
     display: block;
-    background: #d5d6cf;
     border-radius: 50%;
+    box-shadow: 3px 3px 14px -5px rgba(0,0,0,0.33);
 }
 .category__input input {
     position: absolute;
@@ -50,13 +52,14 @@
 .category__input input:checked ~ span {
     background-position: 50% 50%;
     background-size: contain;
+    box-shadow: 3px 3px 14px -5px rgba(0,0,0,0.63);
 }
 /*transport*/
 .category--transport input ~ span {
     background: url("./img/transport.svg") #9cc3a1 50% 50% no-repeat;
     background-size: 65%;
 }
-.category--transport input:checked ~ span {
+.category--transport input:checked ~ span, .category--transport:hover span {
     background-size: 70%;
     background-color: #56c387;
 }
@@ -65,7 +68,7 @@
     background: url("./img/food.svg") #c38c90 50% 50% no-repeat;
     background-size: 62%;
 }
-.category--food input:checked ~ span {
+.category--food input:checked ~ span, .category--food:hover span {
     background-size: 68%;
     background-color: #c32150;
 }
@@ -74,7 +77,7 @@
     background: url("./img/clothes.svg") #8298c3 50% 50% no-repeat;
     background-size: 65%;
 }
-.category--clothes input:checked ~ span {
+.category--clothes input:checked ~ span, .category--clothes:hover span {
     background-size: 70%;
     background-color: #416ec3;
 }
@@ -83,7 +86,7 @@
     background: url("./img/entertainment.svg") #dfaa86 50% 50% no-repeat;
     background-size: 65%;
 }
-.category--entertainment input:checked ~ span {
+.category--entertainment input:checked ~ span, .category--entertainment:hover span {
     background-size: 70%;
     background-color: #df8748;
 }
@@ -92,7 +95,7 @@
     background: url("./img/bills.svg") #7ec0c3 50% 50% no-repeat;
     background-size: 65%;
 }
-.category--bills input:checked ~ span {
+.category--bills input:checked ~ span, .category--bills:hover span {
     background-size: 70%;
     background-color: #3dc3c2;
 }
@@ -101,7 +104,7 @@
     background: url("./img/other.svg") #aa95c3 50% 50% no-repeat;
     background-size: 65%;
 }
-.category--other input:checked ~ span {
+.category--other input:checked ~ span, .category--other:hover span {
     background-size: 70%;
     background-color: #901ac3;
 }
