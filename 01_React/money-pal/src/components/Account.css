@@ -2,7 +2,7 @@
     width: 100%;
     /*max-width: 600px;*/
     height: auto;
-    background-color: yellow;
+    /*background-color: yellow;*/
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 2px;
     padding: 10px;
@@ -34,4 +34,55 @@
 
 .account:hover .account__delete-icon {
     opacity: 1;
+}
+
+
+.category__icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+}
+.category__icon span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    box-shadow: 3px 3px 14px -5px rgba(0,0,0,0.63);
+    border-radius: 50%;
+}
+
+/*categories icons*/
+
+/*transport*/
+.category__icon .transport {
+    background: url("./Categories/img/transport.svg") #56c387 50% 50% no-repeat;
+    background-size: 65%;
+}
+/*food*/
+.category__icon .food {
+    background: url("./Categories/img/food.svg") #c32150 50% 50% no-repeat;
+    background-size: 62%;
+}
+/*clothes*/
+.category__icon .clothes {
+    background: url("./Categories/img/clothes.svg") #416ec3 50% 50% no-repeat;
+    background-size: 65%;
+}
+/*entertainment*/
+.category__icon .entertainment {
+    background: url("./Categories/img/entertainment.svg") #df8748 50% 50% no-repeat;
+    background-size: 65%;
+}
+/*bills*/
+.category__icon .bills {
+    background: url("./Categories/img/bills.svg") #3dc3c2 50% 50% no-repeat;
+    background-size: 65%;
+}
+/*other*/
+.category__icon .other {
+    background: url("./Categories/img/other.svg") #901ac3 50% 50% no-repeat;
+    background-size: 65%;
 }

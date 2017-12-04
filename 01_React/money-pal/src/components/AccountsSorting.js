@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Filters.css';
+
 export default class AccountsSorting extends Component {
   constructor() {
     super();
@@ -7,6 +9,7 @@ export default class AccountsSorting extends Component {
     this.state = {
       sortingCriterion: '',
       sortIncrement: false,
+      isOpen: false
     };
 
     this.toggleSorting = this.toggleSorting.bind(this);
@@ -19,6 +22,12 @@ export default class AccountsSorting extends Component {
     );
   }
 
+  handleSortingOpen = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
+
   handleSortingChange = (e) => {
     let selectedSorting = {
       sortingName: e.target.name,
@@ -29,12 +38,14 @@ export default class AccountsSorting extends Component {
     // this.props.onSortingChange(selectedSorting);
 
     console.log(selectedSorting.sortingName, selectedSorting.sortingStatus)
-  }
+  };
 
   render() {
     return (
-      <div>
-        <ul>
+      <div className="filter__wrapper">
+        <div className="sorting__sign" onClick={this.handleSortingOpen}>Sort by</div>
+        {this.state.isOpen &&
+        <ul className="sorting__checkbox-list">
           <li>
             <label>
               <input type="checkbox"
@@ -43,7 +54,7 @@ export default class AccountsSorting extends Component {
                      onChange={this.toggleSorting}
                      checked={this.state.sortingCriterion === "date" ? true : false}
               />
-              Sort by date
+              <span>date</span>
             </label>
           </li>
           <li>
@@ -54,10 +65,11 @@ export default class AccountsSorting extends Component {
                      onChange={this.toggleSorting}
                      checked={this.state.sortingCriterion === "amount" ? true : false}
               />
-              Sort by summ
+              <span>summ</span>
             </label>
           </li>
         </ul>
+        }
         {this.getDateSortings()}
         {this.getAmountSortings()}
       </div>
@@ -67,56 +79,64 @@ export default class AccountsSorting extends Component {
   getDateSortings() {
     if (this.state.sortingCriterion !== 'date') return null;
     return (
-      <ul>
-        <li>
-          <label>
-            <input type="radio"
-                   name="date"
-                   value="ascending"
-                   onChange={this.handleSortingChange}
-            />
-            ascending date
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="radio"
-                   name="date"
-                   value="descending"
-                   onChange={this.handleSortingChange}
-            />
-            descending date
-          </label>
-        </li>
-      </ul>
+      <div>
+        {this.state.isOpen &&
+        <ul className="filters__radio-list">
+          <li>
+            <label>
+              <input type="radio"
+                     name="date"
+                     value="ascending"
+                     onChange={this.handleSortingChange}
+              />
+              <span>Ascending date</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio"
+                     name="date"
+                     value="descending"
+                     onChange={this.handleSortingChange}
+              />
+              <span>Descending date</span>
+            </label>
+          </li>
+        </ul>
+        }
+      </div>
     )
   }
 
   getAmountSortings() {
     if (this.state.sortingCriterion !== 'amount') return null;
     return (
-      <ul>
-        <li>
-          <label>
-            <input type="radio"
-                   name="amount"
-                   value="ascending"
-                   onChange={this.handleSortingChange}
-            />
-            ascending amount
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="radio"
-                   name="amount"
-                   value="descending"
-                   onChange={this.handleSortingChange}
-            />
-            descending amount
-          </label>
-        </li>
-      </ul>
+      <div>
+        {this.state.isOpen &&
+        <ul className="filters__radio-list">
+          <li>
+            <label>
+              <input type="radio"
+                     name="amount"
+                     value="ascending"
+                     onChange={this.handleSortingChange}
+              />
+              <span>Ascending amount</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio"
+                     name="amount"
+                     value="descending"
+                     onChange={this.handleSortingChange}
+              />
+              <span>Descending amount</span>
+            </label>
+          </li>
+        </ul>
+        }
+      </div>
     )
   }
 

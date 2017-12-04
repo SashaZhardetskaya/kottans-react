@@ -122,19 +122,25 @@ export default class App extends Component {
 
             </div>
 
-          </div>
 
 
 
-
-          {this.state.accounts.length > 0 && this.state.accounts.filter(x => x.amount > 0).length > 0 &&
+            {this.state.accounts.length > 0 && this.state.accounts.filter(x => x.amount > 0).length > 0 ?
             <div className="charts__container" >
               <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
               {this.state.accounts.filter(x => x.amount < 0).length > 0 &&
                 <PiechartSumm data={this.state.accounts}/>
               }
             </div>
-          }
+              :
+              <p>not enough data</p>
+            }
+          </div>
+
+
+
+
+
 
 
           <AccountsList

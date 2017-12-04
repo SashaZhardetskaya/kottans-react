@@ -34,8 +34,11 @@ export default class Account extends Component {
     return (
       <div className="account">
           <button className="account__delete-icon" onClick={this.handleDelete}> × </button>
+          <div className="category__icon">
+            <span className={category}></span>
+          </div>
           <p>{amount}</p>
-          <p>category: {category}</p>
+          <p>{category}</p>
           <p>
             {`${formatedDate.day}.${formatedDate.year}.${formatedDate.month} at ${formatedDate.hour}:${formatedDate.minute}`}
           </p>

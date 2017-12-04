@@ -25,6 +25,8 @@
     width: 90%;
     margin: auto;
     border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    display: flex;
 }
 
 .charts__container {
