@@ -30,12 +30,12 @@ export default class PiechartSumm extends Component {
       return { value: acc.value - obj.amount, label: 'expenses' };
     }, {value: 0});
 
-    console.log(incomeSumm);
-    console.log(expensesSumm);
+    // console.log(incomeSumm);
+    // console.log(expensesSumm);
 
     const dataSumm = [incomeSumm, expensesSumm];
 
-    console.log(dataSumm);
+    // console.log(dataSumm);
 
 
 
