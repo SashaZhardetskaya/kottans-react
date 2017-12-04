@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40537371-813a-4e62-b86e-68fa8f65bcf9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/Account.css" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Account.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/Account.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Account.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/App.css" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/App.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/AccountFilter.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Filters/AccountFilter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/AccountsSorting.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Filters/AccountsSorting.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/Filters.css" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Filters/Filters.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/PieCharts.css" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Charts/PieCharts.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/Piechart.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Charts/Piechart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/PiechartSumm.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Charts/PiechartSumm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/App.js" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01_React/money-pal/src/components/Filters.css" afterPath="$PROJECT_DIR$/01_React/money-pal/src/components/Filters.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,7 +37,7 @@
         </entry>
       </file>
       <file leaf-file-name="PiechartSumm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/PiechartSumm.js">
+        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Charts/PiechartSumm.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
@@ -48,7 +51,7 @@
       <file leaf-file-name="Account.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Account.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="975">
               <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding />
             </state>
@@ -66,7 +69,7 @@
         </entry>
       </file>
       <file leaf-file-name="PieCharts.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/PieCharts.css">
+        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Charts/PieCharts.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
@@ -76,7 +79,7 @@
         </entry>
       </file>
       <file leaf-file-name="AccountsSorting.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/AccountsSorting.js">
+        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Filters/AccountsSorting.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
               <caret line="115" column="43" lean-forward="false" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="43" />
@@ -88,7 +91,7 @@
         </entry>
       </file>
       <file leaf-file-name="Filters.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Filters.css">
+        <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Filters/Filters.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
               <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
@@ -300,6 +303,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/01_React/money-pal/src/components/Charts" />
+      <recent name="$PROJECT_DIR$/01_React/money-pal/src/components/Filters" />
       <recent name="$PROJECT_DIR$/01_React/money-pal/src/components" />
       <recent name="$PROJECT_DIR$/01_React/money-pal/src/components/Categories" />
     </key>
@@ -406,7 +411,7 @@
       <workItem from="1511551885668" duration="20625000" />
       <workItem from="1511690999215" duration="15390000" />
       <workItem from="1511897978291" duration="59540000" />
-      <workItem from="1512297240611" duration="38355000" />
+      <workItem from="1512297240611" duration="39080000" />
     </task>
     <task id="LOCAL-00001" summary="add piechartSumm for expenses &amp; incomes (no data)">
       <created>1512173980683</created>
@@ -419,13 +424,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133910000" />
+    <option name="totallyTimeSpent" value="134635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="27" width="1309" height="742" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2538941" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2538941" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -720,7 +724,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/AccountsSorting.js">
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Filters/AccountsSorting.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="115" column="43" lean-forward="false" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="43" />
@@ -738,7 +742,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/AccountFilter.js">
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Filters/AccountFilter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
@@ -748,7 +752,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Piechart.js">
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Charts/Piechart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
@@ -764,7 +768,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Filters.css">
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Filters/Filters.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
@@ -772,7 +776,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/PieCharts.css">
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Charts/PieCharts.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
@@ -790,7 +794,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/PiechartSumm.js">
+    <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Charts/PiechartSumm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
@@ -810,7 +814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01_React/money-pal/src/components/Account.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="975">
           <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding />
         </state>

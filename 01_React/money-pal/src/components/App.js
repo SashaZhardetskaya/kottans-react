@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import AccountEditor from './AccountEditor';
 import AccountsList from './AccountsList';
-import AccountFilter from './AccountFilter';
-import AccountsSorting from './AccountsSorting';
-import Piechart from './Piechart';
-import PiechartSumm from './PiechartSumm';
+import AccountFilter from './Filters/AccountFilter';
+import AccountsSorting from './Filters/AccountsSorting';
+import Piechart from './Charts/Piechart';
+import PiechartSumm from './Charts/PiechartSumm';
 
 
 import './App.css';
