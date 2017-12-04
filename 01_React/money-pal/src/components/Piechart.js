@@ -40,12 +40,8 @@ export default class Piechart extends Component {
       obj.value = obj.amount; //the name of thw column must be 'value' for plugin
       return obj;
     });
-    console.log('data', data);
+    // console.log('data', data);
 
-
-
-
-    // console.log(data);
 
     const {expandedSector} = this.state;
 
@@ -60,10 +56,10 @@ export default class Piechart extends Component {
           expandOnHover
           shrinkOnTouchEnd
         />
-        <div>
+        <div className="charts__description">
           {
             data.map((element, i) => (
-              <div key={i} >
+              <div key={i}>
                 <span style={{background: element.color}}></span>
                 <span style={{fontWeight: this.state.expandedSector === i ? "bold" : null}}>
                   {element.category} : {element.amount}

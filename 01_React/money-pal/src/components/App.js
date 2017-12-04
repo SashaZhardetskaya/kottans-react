@@ -7,8 +7,6 @@ import AccountsSorting from './AccountsSorting';
 import Piechart from './Piechart';
 import PiechartSumm from './PiechartSumm';
 
-// import PieChart from './PieChart';
-
 
 import './App.css';
 
@@ -18,6 +16,7 @@ export default class App extends Component {
 
         this.state = {
              accounts: [],
+             chartsIsOpen: false
         };
 
         this.handleAccountDelete = this.handleAccountDelete.bind(this);
@@ -100,6 +99,12 @@ export default class App extends Component {
       }
     };
 
+    handleChartsOpen = (e) => {
+      this.setState({
+        chartsIsOpen: !this.state.chartsIsOpen
+      });
+    };
+
 
 
     render() {
@@ -124,17 +129,20 @@ export default class App extends Component {
 
 
 
-
-            {this.state.accounts.length > 0 && this.state.accounts.filter(x => x.amount > 0).length > 0 ?
-            <div className="charts__container" >
-              <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
-              {this.state.accounts.filter(x => x.amount < 0).length > 0 &&
-                <PiechartSumm data={this.state.accounts}/>
+            <div className="charts__wrapper">
+              <button className="charts__show-button" onClick={this.handleChartsOpen}>Show statistic</button>
+              {this.state.chartsIsOpen && this.state.accounts.length > 0 && this.state.accounts.filter(x => x.amount > 0).length > 0 &&
+                <div className="charts__container" >
+                  <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
+                  {this.state.accounts.filter(x => x.amount < 0).length > 0 &&
+                  <PiechartSumm data={this.state.accounts}/>
+                  }
+                </div>
               }
             </div>
-              :
-              <p>not enough data</p>
-            }
+
+
+
           </div>
 
 

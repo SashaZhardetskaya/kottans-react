@@ -30,16 +30,7 @@ export default class PiechartSumm extends Component {
       return { value: acc.value - obj.amount, label: 'expenses' };
     }, {value: 0});
 
-    // console.log(incomeSumm);
-    // console.log(expensesSumm);
-
     const dataSumm = [incomeSumm, expensesSumm];
-
-    // console.log(dataSumm);
-
-
-
-    // console.log(data);
 
     const {expandedSector} = this.state;
 
@@ -54,10 +45,10 @@ export default class PiechartSumm extends Component {
           expandOnHover
           shrinkOnTouchEnd
         />
-        <div>
+        <div className="charts__description">
           {
             dataSumm.map((element, i) => (
-              <div key={i} >
+              <div key={i}>
                 {/*<span style={{background: element.color}}></span>*/}
                 <span style={{fontWeight: this.state.expandedSector === i ? "bold" : null}}>
                   {element.label} : {element.value}
