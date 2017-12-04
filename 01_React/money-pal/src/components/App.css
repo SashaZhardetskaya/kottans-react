@@ -27,6 +27,7 @@
     border-top: 1px solid #cfcfcf;
     border-bottom: 1px solid #cfcfcf;
     display: flex;
+    padding-bottom: 15px;
 }
 
 .charts__container {

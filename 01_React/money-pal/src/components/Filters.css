@@ -11,7 +11,7 @@
     font-weight: 300;
     text-shadow: 0px 1px 0px #2f6627;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
 }
 
 .filter__wrapper ul {
@@ -52,8 +52,10 @@
 .filters__radio-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 0;
+    margin-bottom: 0;
 }
 .filters__radio-list label {
     color: #999;

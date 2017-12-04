@@ -37,11 +37,16 @@ export default class Account extends Component {
           <div className="category__icon">
             <span className={category}></span>
           </div>
-          <p>{amount}</p>
-          <p>{category}</p>
-          <p>
-            {`${formatedDate.day}.${formatedDate.year}.${formatedDate.month} at ${formatedDate.hour}:${formatedDate.minute}`}
-          </p>
+          <div className="account-description">
+            <div className="account-description__col">
+              <div className="account-description__category">{category}</div>
+              <div className="account-description__date">
+                {`${formatedDate.day}.${formatedDate.month}.${formatedDate.year} at ${formatedDate.hour}:${formatedDate.minute}`}
+              </div>
+            </div>
+            <div className={amount > 0 ? "positive-amount" : "negative-amount"}>{amount}
+            </div>
+          </div>
       </div>
     );
   }

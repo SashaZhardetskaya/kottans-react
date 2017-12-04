@@ -113,7 +113,7 @@ export default class App extends Component {
       // }
       return (
         <div className="app">
-          <h2 className="app__header">App</h2>
+          <h2 className="app__header">Money Manager</h2>
 
           <div className="editor__container">
 
@@ -130,7 +130,7 @@ export default class App extends Component {
 
 
             <div className="charts__wrapper">
-              <button className="charts__show-button" onClick={this.handleChartsOpen}>Show statistic</button>
+              <button className="charts__show-button" onClick={this.handleChartsOpen}>{this.state.chartsIsOpen ? 'Hide' : 'Show'} statistic</button>
               {this.state.chartsIsOpen && this.state.accounts.length > 0 && this.state.accounts.filter(x => x.amount > 0).length > 0 &&
                 <div className="charts__container" >
                   <Piechart data={this.state.accounts.filter(x => x.amount > 0)} />
