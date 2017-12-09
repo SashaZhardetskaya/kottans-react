@@ -25,17 +25,17 @@ export default class AccountEditor extends Component {
 
     increaseAmount(event) {
         this.setState({
-          amount: this.state.amount + 1
+            amount: this.state.amount + 1
         });
     }
     decreaseAmount(event) {
         this.setState({
-          amount: this.state.amount - 1
+            amount: this.state.amount - 1
         });
     }
     changeAmount(e) {
         this.setState({
-          amount: +e.target.value
+            amount: +e.target.value
         });
     }
 
@@ -75,8 +75,8 @@ export default class AccountEditor extends Component {
         };
 
         if (newAccount.amount !== 0 && newAccount.category !== '') {
-          this.props.onAccountAdd(newAccount);
-          this.resetState();
+            this.props.onAccountAdd(newAccount);
+            this.resetState();
         }
     }
 
@@ -94,7 +94,6 @@ export default class AccountEditor extends Component {
                 <div className="number-editor">
                     <button onClick={this.decreaseAmount} className="number-editor__button"><span>-</span></button>
                     <input type="number" value={this.state.amount} onChange={this.changeAmount}/>
-                  {/*<div>{this.state.amount}</div>*/}
                     <button onClick={this.increaseAmount} className="number-editor__button"><span>+</span></button>
                 </div>
 
